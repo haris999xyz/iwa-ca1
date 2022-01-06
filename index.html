@@ -1,0 +1,68 @@
+<html>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Node.Js | iwa-ca1</title>
+
+    <body style="margin: 20px;">
+        <div class="container">
+        <h3 style="text-align: center;">NODE.JS CRUD APPLICATION</h3>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Add User</h3>
+        <form action="/addUser" method="post">
+            <div class="form-group">
+                User ID <input type = "text" id="userid" name="userid" size="20" class="form-control"><br>
+            Name <input type ="text" id="username" name = "username" size="20" class="form-control"><br>
+            DOB <input type ="text" id="dob" name = "dob" size="20" class="form-control"><br>
+            Profession <input type ="text" id="profession" name = "profession" size="20" class="form-control"><br>
+            <button type = "submit" name="submit" class="btn btn-primary btn-lg btn-block">
+                Add User
+            </button>
+            </div>
+            
+        </form>
+            </div>
+
+            <div class="col-lg-6">
+                <h3>Get Specific User Details</h3>
+        <form action="/particularUser" method="post"> 
+            User ID <input type = "text" id="urid" name="urid" size="20" class="form-control"><br>
+            <button type = "submit" name="submit" class="btn btn-primary btn-lg btn-block">
+                Get User Info
+            </button>
+        </form>
+            </div>
+        </div>
+
+        <br><br><br>
+        
+
+        
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Delete User Details</h3>
+        <form action="/deleteUser" method="post"> 
+            User ID <input type = "text" id="uid" name="uid" size="20" class="form-control"> <br>
+            <button type = "submit" name="submit" class="btn btn-primary btn-lg btn-block">
+                Delete User
+            </button>
+        </form>
+            </div>
+
+            <div class="col-lg-6">
+                <h3>Show All User Details</h3>
+        <form action="/showAll" method="get"> 
+            <button type = "submit" name="submit" class="btn btn-primary btn-lg btn-block">
+                Show All User Info
+            </button>
+        </form>
+            </div>
+        </div>
+        
+
+        
+
+    </div>
+    </bddy>
+</html>
